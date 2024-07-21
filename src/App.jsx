@@ -24,8 +24,7 @@ function App() {
     const fetchData = async () => {
       const response = await fetch(`https://tasty.p.rapidapi.com/recipes/list?from=0&size=20&tags=under_30_minutes`, options);
       const myData = await response.json();
-      
-      // Check the structure of myData and extract the correct array
+    
       if (myData && myData.results) {
         setData(myData.results);
       }
@@ -34,7 +33,7 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(data); // Inspect the structure of data
+  console.log(data); 
 
   return (
     <div className="w-screen min-h-screen bg-black">
