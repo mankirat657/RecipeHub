@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    cursor: url('./assets/cursor.png'),auto;
+}
+.myfont{
+    font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.herofont{
+    line-height: 1;
+}
+.clamp-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 20; /* Change this value to the number of lines you want */
+    line-clamp: 3;
+}
+#show{
+    background-color: rgb(12, 12, 12);
+}
+@media screen and (max-width: 1000px){
+    body,html{
+        overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 700px){
+   .resp{
+    width: 60%;
+   }
+   .resp2{
+    width: 60%;
+   }
+}
+    @media screen and (max-width: 600px){
+    .resp{
+        width: 80%;
+    }
+    .resp2{
+        width: 80%;
+    }
+    }
+    @media screen and (max-width: 500px){
+    .resp{
+        width: 90%;
+    }
+    .resp2{
+        width: 90%;
+    }
+    .contactPage{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    }
+    @media screen and (max-width: 400px){
+    .resp{
+        width: 100%;
+    }
+    .resp2{
+        width: 100%;
+    }
+    }
